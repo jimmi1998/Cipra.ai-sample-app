@@ -1,0 +1,19 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal() // Optional, for Gradle plugins
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS) // This might be causing the issue
+    repositories {
+        google() // Make sure this is declared only once
+        mavenCentral()
+        jcenter() // Optional, depending on your dependencies
+    }
+}
+
+rootProject.name = "CipraAi"
+include ':app'

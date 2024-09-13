@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/values/colors.xml -->
+<resources>
+    <!-- Primary and Secondary Colors -->
+    <color name="colorPrimary">#3F51B5</color> <!-- Deep Blue (Logo color) -->
+    <color name="colorPrimaryDark">#303F9F</color> <!-- Darker Blue for status bar -->
+    <color name="colorAccent">#FF4081</color> <!-- Pink accent color -->
+
+    <!-- Background and Text Colors -->
+    <color name="colorBackground">#FFFFFF</color> <!-- White background -->
+    <color name="colorTextPrimary">#000000</color> <!-- Black primary text color -->
+    <color name="colorTextSecondary">#757575</color> <!-- Grey secondary text color -->
+
+    <!-- Button Colors -->
+    <color name="colorButton">#009688</color> <!-- Teal color (Logo accent) -->
+    <color name="colorButtonText">#FFFFFF</color> <!-- White text for buttons -->
+</resources>

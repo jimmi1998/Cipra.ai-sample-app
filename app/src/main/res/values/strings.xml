@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CipraAi</string>
+    <string name="sign_in">Sign In</string>
+    <string name="invalid_credentials">Invalid email or password. Please try again.</string>
+    <string name="cipra_logo_desc">CIPRA.ai Logo</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+</resources>
