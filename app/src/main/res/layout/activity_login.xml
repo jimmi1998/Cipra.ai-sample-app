@@ -2,23 +2,24 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@drawable/signin_background"> <!-- Set background here -->
 
     <!-- CIPRA Logo -->
     <ImageView
         android:id="@+id/logo"
         android:layout_width="300dp"
         android:layout_height="150dp"
-        android:layout_gravity="center"
+        android:contentDescription="@string/cipra_ai_logo"
         android:src="@drawable/cipra_logo"
-        android:layout_marginTop="@dimen/text_size_large1"
+        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Sign In Text -->
     <TextView
         android:id="@+id/sign_tv"
         android:layout_width="wrap_content"
@@ -29,31 +30,84 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo" />
+        app:layout_constraintTop_toBottomOf="@id/logo" />
 
-    <!-- Email Input Field -->
-    <EditText
-        android:id="@+id/email_input"
+    <!-- Email Input Field with User Icon -->
+    <LinearLayout
+        android:id="@+id/email_linearlayout"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50sp"
-        android:background="@drawable/edit_text_border"
-        android:hint="@string/email"
-        android:inputType="textEmailAddress"
-        app:layout_constraintTop_toBottomOf="@+id/sign_tv"
-        tools:layout_editor_absoluteX="16dp" />
+        android:layout_marginStart="@dimen/padding_medium1"
+        android:layout_marginEnd="@dimen/padding_medium1"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@id/sign_tv"
+        android:layout_marginTop="@dimen/padding_large3">
 
-    <!-- Password Input Field -->
-    <EditText
-        android:id="@+id/password_input"
+        <ImageView
+            android:id="@+id/user_icon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="@dimen/padding_medium2"
+            android:layout_gravity="center"
+            android:contentDescription="@string/user_icon"
+            android:src="@drawable/user_hollow" />
+
+        <EditText
+            android:id="@+id/email_input"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:background="@drawable/edit_text_border"
+            android:hint="@string/email"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:minHeight="48dp"
+            android:minWidth="48dp"
+            android:maxWidth="488dp" />
+
+    </LinearLayout>
+
+    <!-- Password Input Field with Key and Eye Icon -->
+    <LinearLayout
+        android:id="@+id/password_linearlayout"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/edit_text_border"
-        android:hint="@string/password"
-        android:inputType="textPassword"
-        android:layout_marginTop="@dimen/text_size_large2"
-        app:layout_constraintTop_toBottomOf="@+id/email_input"
-        tools:layout_editor_absoluteX="16dp" />
+        android:layout_marginStart="@dimen/padding_medium1"
+        android:layout_marginEnd="@dimen/padding_medium1"
+        android:layout_marginTop="@dimen/padding_large2"
+        app:layout_constraintTop_toBottomOf="@id/email_linearlayout">
+
+        <ImageView
+            android:id="@+id/key_icon"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/padding_medium1"
+            android:contentDescription="@string/key_icon"
+            android:src="@drawable/key_hollow" />
+
+        <EditText
+            android:id="@+id/password_input"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:background="@drawable/edit_text_border"
+            android:hint="@string/password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:drawableEnd="@drawable/hidden_grey"
+            android:drawablePadding="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:minHeight="48dp"
+            android:minWidth="48dp"
+            android:maxWidth="488dp" />
+
+    </LinearLayout>
 
     <!-- Sign In Button -->
     <Button
@@ -62,9 +116,9 @@
         android:layout_height="wrap_content"
         android:background="@drawable/button_background"
         android:text="@string/sign_in"
-        android:layout_marginTop="@dimen/text_size_large2"
+        app:layout_constraintTop_toBottomOf="@id/password_linearlayout"
+        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password_input" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

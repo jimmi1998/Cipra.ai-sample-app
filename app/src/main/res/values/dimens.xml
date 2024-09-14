@@ -3,8 +3,11 @@
 <resources>
     <!-- Padding for layouts -->
     <dimen name="padding_small">8dp</dimen>
-    <dimen name="padding_medium">16dp</dimen>
-    <dimen name="padding_large">24dp</dimen>
+    <dimen name="padding_medium1">16dp</dimen>
+    <dimen name="padding_medium2">20dp</dimen>
+    <dimen name="padding_large1">24dp</dimen>
+    <dimen name="padding_large2">32dp</dimen>
+    <dimen name="padding_large3">60dp</dimen>
 
     <!-- Text Sizes -->
     <dimen name="text_size_small">14sp</dimen>

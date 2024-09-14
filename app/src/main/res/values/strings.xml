@@ -5,4 +5,7 @@
     <string name="cipra_logo_desc">CIPRA.ai Logo</string>
     <string name="password">Password</string>
     <string name="email">Email</string>
+    <string name="cipra_ai_logo">Cipra.ai Logo</string>
+    <string name="user_icon">User Icon</string>
+    <string name="key_icon">Key Icon</string>
 </resources>
