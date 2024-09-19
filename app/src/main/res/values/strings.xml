@@ -8,4 +8,12 @@
     <string name="cipra_ai_logo">Cipra.ai Logo</string>
     <string name="user_icon">User Icon</string>
     <string name="key_icon">Key Icon</string>
+    <string name="recommendation">Recommendation</string>
+    <string name="recommendation_txt">Our analysis shows your BP is related to your daily number of steps. This week, focus on increasing your daily step count. Regular physical activity helps to lower blood pressure.</string>
+    <string name="steps_image_desc">Steps Image Description</string>
+    <string name="first_header">Personalized Impact of Lifestyle Factors</string>
+    <string name="bp_overview">BP Overview</string>
+    <string name="lifestyle">Lifestyle</string>
+    <string name="questionnaire">Questionnaire</string>
+    <string name="account">Account</string>
 </resources>

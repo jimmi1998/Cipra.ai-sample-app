@@ -1,13 +1,11 @@
 package com.cipra.app.network;
 
+import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
 
 public interface ApiService {
-
-    @GET("login")
-    Call<LoginResponse> login(@Query("username") String username, @Query("password") String password);
+    @GET("takehome/signin")
+    Call<ResponseBody> signin(@Query("email") String email, @Query("password") String password);
 }
-
-

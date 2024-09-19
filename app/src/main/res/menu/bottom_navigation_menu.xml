@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_bp_overview"
+        android:icon="@drawable/bp_overview"
+        android:title="@string/bp_overview" />
+    <item
+        android:id="@+id/nav_lifestyle"
+        android:icon="@drawable/ic_lifestyle"
+        android:title="@string/lifestyle" />
+    <item
+        android:id="@+id/nav_questionnaire"
+        android:icon="@drawable/ic_questionnaire"
+        android:title="@string/questionnaire" />
+    <item
+        android:id="@+id/nav_account"
+        android:icon="@drawable/user_solid"
+        android:title="@string/account" />
+</menu>

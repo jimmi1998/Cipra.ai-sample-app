@@ -2,16 +2,16 @@ pluginManagement {
     repositories {
         google()
         mavenCentral()
-        gradlePluginPortal() // Optional, for Gradle plugins
+        gradlePluginPortal()
     }
 }
 
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS) // This might be causing the issue
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
     repositories {
-        google() // Make sure this is declared only once
+        google()
         mavenCentral()
-        jcenter() // Optional, depending on your dependencies
+        jcenter()
     }
 }
 
